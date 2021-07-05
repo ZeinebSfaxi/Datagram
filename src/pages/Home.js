@@ -1,13 +1,14 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
+import '../App.css'
 
 const Home = () => {
     return (
-        <div className='home'>
+        <main>
             <Container>
-            <h1>Home</h1>
+                <h1>Welcome to MyApp</h1>
             </Container>
-        </div>
+        </main>
     );
 };
 

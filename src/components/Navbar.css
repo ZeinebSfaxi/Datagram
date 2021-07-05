@@ -21,6 +21,7 @@
 .nav-menu.active {
     left: 0;
     transition: 350ms;
+    z-index: 100;
 }
 
 .nav-text {
@@ -50,6 +51,7 @@
 
 .nav-menu-items {
     width: 100%;
+    z-index: 100;
 }
 
 span {

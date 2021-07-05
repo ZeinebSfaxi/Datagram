@@ -15,7 +15,7 @@ const Header = () => {
                 <Link to='#' className='menu-bars'>
                     <i className="fas fa-bars" onClick={showSidebar}></i>
                 </Link>
-                <Link to='/' >
+                <Link to='/'>
                     <h2 className='title'>My App</h2>
                 </Link>
             </div>
