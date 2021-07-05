@@ -40,7 +40,7 @@ const Categories = () => {
                     </Container>
 
                     <label className='py-3'>
-                        <input type="text" placeholder='Search ..' value={searchInput}
+                        <input type="text" placeholder='Search Description | Name' value={searchInput}
                                onChange={e => setSearchInput(e.target.value)}/>
                     </label>
 

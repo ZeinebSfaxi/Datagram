@@ -40,7 +40,7 @@ const Posts = () => {
                     </Container>
 
                     <label className='py-3'>
-                        <input type="text" placeholder='Search ..' value={searchInput}
+                        <input type="text" placeholder='Search Created | Title' value={searchInput}
                                onChange={e => setSearchInput(e.target.value)}/>
                     </label>
                     <label className='m-1'>
