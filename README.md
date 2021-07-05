@@ -53,11 +53,12 @@ I just simply used a pages folder where I put all my screens and a component fol
 ###I used a .env with _BASE_URL to increase the security of the application
 
 ### Are there any improvements you could make to your submission?
-
+Make it more responsive.
 I can improve this project by working more on it's UI/UX. It can use more icons, pagination. I could also work more on the home page, 404 page and loading screen
 where the design can be much more improved. I can also add a real backend to it using node.js and mongoDB (as in MERN fullstack) and even implement some other functionalities (cart, forms ...)
 
 ### What would you do differently if you were allocated more time?
+I could have worked more on the responsiveness of the application.
 I can improve this project by working more on it's UI/UX. It can use more icons, pagination. I could also work more on the home page, 404 page and loading screen
 where the design can be much more improved. I can also add a real backend to it using node.js and mongoDB (as in MERN fullstack) and even implement some other functionalities (cart, forms ...)
 
