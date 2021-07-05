@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 
 const Users = () => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [users, setUsers] = useState([])
     const [searchInput, setSearchInput] = useState('')
     const [orderName, setorderName] = useState(false)
@@ -14,7 +16,7 @@ const Users = () => {
 
     //get function
     const fetchUsers = () => {
-        axios.get('https://gorest.co.in/public-api/users').then(res => {
+        axios.get(`${URL}/public-api/users`).then(res => {
                 setUsers(res.data.data)
             }
         )

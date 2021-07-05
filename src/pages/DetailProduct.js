@@ -5,9 +5,11 @@ import {Badge, Button, Card, Col, Container, Image, ListGroup, Row} from "react-
 
 const DetailProduct = ({match}) => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [product, setProduct] = useState({})
     const fetchProduct = () => {
-        axios.get(`https://gorest.co.in/public-api/products/${match.params.id}`).then(res => {
+        axios.get(`${URL}/public-api/products/${match.params.id}`).then(res => {
             console.log("hedhi data", res.data.data)
             setProduct(res.data.data)
             console.log("hedhi products", product)

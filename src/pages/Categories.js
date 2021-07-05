@@ -4,6 +4,8 @@ import axios from "axios";
 
 const Categories = () => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [categories, setCategories] = useState([])
     const [searchInput, setSearchInput] = useState('')
     const [orderName, setorderName] = useState(false)
@@ -11,7 +13,7 @@ const Categories = () => {
 
     //get function
     const fetchCategories = () => {
-        axios.get('https://gorest.co.in/public-api/categories').then(res => {
+        axios.get(`${URL}/public-api/categories`).then(res => {
                 setCategories(res.data.data)
             }
         )

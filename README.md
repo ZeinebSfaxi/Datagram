@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### please run `npm start` to install the needed dependencies
+### please create a `.env` file in the root folder and add `REACT_APP_BASE_URL=https://gorest.co.in`  then run `npm start` to install the needed dependencies
 
 I used react-bootstrap and moment for the making of this project
 
@@ -50,6 +50,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 Since this project is a series of get functions, it doesn't really need a react-redux structure with the action folder and reducers folder
 I just simply used a pages folder where I put all my screens and a component folder where I stored components and used called them in my screen 
+###I used a .env with _BASE_URL to increase the security of the application
 
 ### Are there any improvements you could make to your submission?
 

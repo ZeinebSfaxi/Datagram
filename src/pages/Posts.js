@@ -5,6 +5,8 @@ import Post from "../components/Post";
 
 const Posts = () => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [posts, setPosts] = useState([])
     const [searchInput, setSearchInput] = useState('')
     const [orderTitle, setorderTitle] = useState(false)
@@ -12,7 +14,7 @@ const Posts = () => {
 
     //get posts
     const fetchPosts = () => {
-        axios.get('https://gorest.co.in/public-api/posts').then(res => {
+        axios.get(`${URL}/public-api/posts`).then(res => {
                 setPosts(res.data.data)
             }
         )

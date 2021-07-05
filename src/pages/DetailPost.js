@@ -6,9 +6,11 @@ import moment from "moment";
 
 const DetailPost = ({match}) => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [post, setPost] = useState({})
     const fetchPost = () => {
-        axios.get(`https://gorest.co.in/public-api/posts/${match.params.id}`).then(res => {
+        axios.get(`${URL}/public-api/posts/${match.params.id}`).then(res => {
             setPost(res.data.data)
         })
     }

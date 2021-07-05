@@ -5,6 +5,8 @@ import Product from "../components/Product";
 
 const Products = () => {
 
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [products, setProducts] = useState([])
     const [searchInput, setSearchInput] = useState('')
     const [orderPrice, setorderPrice] = useState(false)
@@ -12,7 +14,7 @@ const Products = () => {
 
     //get products
     const fetchProducts = () => {
-        axios.get('https://gorest.co.in/public-api/products').then(res => {
+        axios.get(`${URL}/public-api/products`).then(res => {
                 // console.log("hedhi data", res.data.data)
                 setProducts(res.data.data)
                 // console.log("hedhi products", products)

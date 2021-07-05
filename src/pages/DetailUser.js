@@ -5,16 +5,19 @@ import axios from "axios";
 import Post from "../components/Post";
 
 const DetailUser = ({match}) => {
+
+    const URL = process.env.REACT_APP_BASE_URL;
+
     const [user, setUser] = useState({})
     const [userPosts, setUserPosts] = useState([])
     const fetchUser = () => {
-        axios.get(`https://gorest.co.in/public-api/users/${match.params.id}`).then(res => {
+        axios.get(`${URL}/public-api/users/${match.params.id}`).then(res => {
             setUser(res.data.data)
         })
     }
 
     const fetchUserPosts = () => {
-        axios.get(`https://gorest.co.in/public-api/users/${match.params.id}/posts`).then(res => {
+        axios.get(`${URL}/public-api/users/${match.params.id}/posts`).then(res => {
             setUserPosts(res.data.data)
             console.log(userPosts)
         })
